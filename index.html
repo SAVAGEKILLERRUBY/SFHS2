@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import Fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <title>San Francisco High School</title>
+  <link rel="Icon" href="img/Untitled-10000.png">
+  
+  </head>
+  <body class="">
+      
+      <!-- nav -->
+  <div class="bg">
+      <div class="primary-overlay">
+      
+     
+      <div class="navbar-fixed">
+            <nav class="green" style="height:100px;">
+                <div class="nav-wrapper ">
+                    <div class="container">
+                    <img src="img/Untitled-10000.png" alt="" class="responsive-image logoimage">
+                        <h2 class="brand-logo" style="margin-bottom:30px;"> San Francisco High School</h2>
+                    
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html" class=" activated waves-effect waves-light"  style="margin-top: 15px">Home</a></li>
+                            <li><a href="about.html" class="unactive waves-effect waves-light" style="margin-top: 15px">About</a></li>
+                            <li><a href="gallery.html" class="unactive waves-effect waves-light" style="margin-top: 15px">Gallery</a></li>
+                            <li><a href="#registrationmodal" style="margin-top: 15px" class=" button modal-trigger pulse btn btn-large waves-effect waves-dark ">Register</a></li>
+                        </ul>
+                        <a href="#!" class="button-collapse" data-activates="mobile-nav">
+                                <i style="margin-top: 30px;" class="fa-2x fa fa-bars"></i></a>
+                            </nav>  </div>   <!-- sidenav -->
+                        <ul id="mobile-nav" class="side-nav">
+                            
+                                <img src="img/Untitled-10000.png" alt="" class="imagelogo"><a href="#" disabled class="brand-name" >San Francisco High School</a>
+                                <div class="divider"></div>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                
+                                <li><a class="btn green btn-large modal-trigger" href="#registrationmodal">Register</a></li>
+                            </ul>        
+                            
+                    
+        
+                
+    <br>
+    <br>
+    <br>
+    <br>
+<h3 class="center white-text">Welcome to</h3>
+<h1 class="center white-text">San Francisco High School</h1>
+
+    <!-- slider -->
+            
+    <div class=" slider" >
+        <ul class=" slides" style=" background: none;">
+            <li >
+                <img src="" alt="">
+                <div class="caption  center-align">
+                    <h3 class="white-text">You've come to the right school</h3>
+                    
+                </div></li>
+                <li>
+                    <img src="" alt="">
+                        <div class="caption left-align">
+                            <h3 class="white-text">It have a Senior High</h3>
+                    
+                        </div>
+                </li>
+            <li>
+                <img src="" alt="">
+                    <div class="caption right-align">
+                        <h3 class="white-text">New and Improved School</h3>
+                        
+                    </div>
+            </li>
+        </ul></div>
+    </div></div>
+                    
+            
+</div>
+    <footer class="page-footer green darken-3 " style="height: 110%;">
+        <div class="container">
+        
+            <div class="row">
+
+                <div class="col l6 s12 offset-l3">
+                 
+                    <div class="footer-copyright green darken-3"><div class="center container">San Francisco High School &copy; 2019</div></div>
+                    <h6 class="center container"> Let Study Together</h6>
+
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <div id="registrationmodal" class="modal">
+        <div class="modal-content">
+            <h1 class="center">Requirements</h1>
+            <ul>
+                <li>Birthcertificate</li>
+                <li>Form 137/Report Card</li>
+                <li>1x1 Picture</li>
+                <li>Baranggay Clearance</li>
+                
+            </ul>
+            
+        </div>
+    </div>    </div>
+</div>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script>
+   $(function(){
+        $(window).scroll(function (){
+    if($(window).scrollTop() > 2){
+        $('nav').addClass('green').removeClass('transparent');
+    }
+    else{
+        $('nav').removeClass('green').addClass('transparent');
+    }
+});
+    });
+$(document).ready(function () {
+      // Init Sidenav
+      $('.button-collapse').sideNav();
+
+      
+      $('.slider').slider({
+  indicators:true,
+  height:500,
+  transition: 900,
+  interval:3000,
+});
+$('.modal').modal({
+    dismissed:true,
+    inDuration:300,
+    outDuration:200,
+    ready:function(modal,trigger){
+    console.log('Modal Open',modal,trigger)    
+    }
+})
+
+    });
+  </script>
+</body>
+
+</html>

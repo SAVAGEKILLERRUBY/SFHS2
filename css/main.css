@@ -1,0 +1,117 @@
+.ga{
+    background:transparent;
+}
+.bg{
+    background: url(../img/IMG20190729082531.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}.primary-overlay{
+    background: rgba(0, 0, 0, .3);
+    background-size: cover;
+    height: 100%;
+}
+.activated{
+background:green;
+border-radius: 20%;
+transition: 0.3s;
+
+}
+.activated:hover{
+    background: rgba(0, 255, 0, 0.3);
+    border-radius: 0%; 
+}
+.brand-logo{
+    color: whitesmoke !important;
+    font-size: 250% !important; 
+}
+.unactive{
+    color: white;
+    
+    background: transparent;
+    transition: 0.3s;
+
+}
+.gb{
+    background: green;
+}
+.unactive:hover{
+    color:whitesmoke;
+    background: rgba(0, 153, 0, 1);
+}
+.button:hover{
+    color:green;
+    background:white;
+}
+.button{
+    color:white;
+    background:green;
+}
+image{
+    position: relative !important;
+    width: 200px;
+
+    display: inline-block !important;
+}
+.imagehover{
+display: block !important;
+}
+.image-overlay{
+    position: absolute !important;
+    transition: all .3s ease !important;
+    opacity: 0 !important;
+    background-color: darkgray !important;
+   
+
+}
+.image:hover .image-overlay{
+    opacity: 1 !important;
+}
+.image-info{
+    margin-top: -50%;
+    color: black;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+.overlayleft{
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: darkgray;
+}
+.image:hover .overlayleft{
+    width:100%;
+}
+.logoimage{
+    width: 6%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.brand-logo{
+    font-size: 25px !important;
+}
+.green{
+    transition: 0.3s;
+}
+.imagelogo{
+    width:23%;
+}
+.brand-name{
+    font-size: 110%;
+    color:black;
+}
+.transparent{
+    transition: .3s;
+}
