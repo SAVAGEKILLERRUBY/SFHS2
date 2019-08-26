@@ -34,14 +34,15 @@
                     <li><a href="index.html" class="unactive waves-effect waves-light"  style="margin-top: 15px">Home</a></li>
                     <li><a href="about.html" class="unactive waves-effect waves-light" style="margin-top: 15px">About</a></li>
                     <li><a href="gallery.html" class="activated waves-effect waves-light" style="margin-top: 15px">Gallery</a></li>
-                    <li><a href="#registrationmodal" style="margin-top: 15px" class=" button modal-trigger btn btn-large waves-effect pulse waves-dark ">Requirements</a></li>
+                    <li><a href="#registrationmodal" style="margin-top: 15px;" class="  modal-trigger ">Requirements</a></li>
+                <li><a href="#registrationform" style="margin-top: 15px;" class="button modal-triggre btn btn-large waves-effect pulse waves-dark">Register</a></li>
                 </ul>
                 <a href="#!" class="button-collapse" data-activates="mobile-nav">
                         <i class="fa fa-bars"></i></a>
                     </nav>  </div>   <!-- sidenav -->
                 <ul id="mobile-nav" class="side-nav">
                     
-                        <img src="img/Untitled-10000.png" alt="" class="imagelogo"><a href="#" disabled class="brand-name" >San Francisco High School</a>
+                        <img src="img/Untitled-10000.png" alt="" class="resposive-image brand-logo imagelogo"><a href="#" disabled class="brand-name" >San Francisco High School</a>
                         <div class="divider"></div>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -147,11 +148,11 @@
             <div class="card-image">
                 <div class="slider ">
 <ul class="slides">
-    <li><img src="img/IMG20190726131239.jpg" alt=""></li>
-    <li><img src="img/IMG20190726132039.jpg" alt=""></li>
-    <li><img src="img/IMG20190726132044.jpg" alt=""></li>
-    <li><img src="img/IMG20190726132147.jpg" alt=""></li>
-    <li><img src="img/IMG20190726132029.jpg" alt=""></li>
+    <li><img class="fullpic" src="img/IMG20190726131239.jpg" alt=""></li>
+    <li><img class="fullpic" src="img/IMG20190726132039.jpg" alt=""></li>
+    <li><img class="fullpic" src="img/IMG20190726132044.jpg" alt=""></li>
+    <li><img class="fullpic" src="img/IMG20190726132147.jpg" alt=""></li>
+    <li><img class="fullpic" src="img/IMG20190726132029.jpg" alt=""></li>
 
 </ul>                    
 
@@ -265,6 +266,10 @@
         </div>
         </div>
     </div>
+    <div class="modal" id="registrationform">
+    <form action="">
+        <div class="input-field"><input type="text"><label for="name"></label></div>
+    </form></div>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -290,6 +295,7 @@ $(document).ready(function () {
   height:500,
   transition: 900,
   interval:3000,
+  fullWidth:true,
 });
 $('.modal').modal({
     dismissed:true,
